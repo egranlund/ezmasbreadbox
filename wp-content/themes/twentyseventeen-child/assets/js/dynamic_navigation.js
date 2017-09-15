@@ -7,7 +7,8 @@ jQuery( document ).ready( function() {
 		var panelId = jQuery( this ).html().toLowerCase().replace(/\s+/g, "-");
 		jQuery( this ).wrapInner(function() {
 			
-			return "<span style='padding-top:168px;' id='" + panelId + "'></span>";
+			// return "<span style='padding-top:168px;' id='" + panelId + "'></span>";
+			return "<span style='padding-top:96px;' id='" + panelId + "'></span>";
 		})
 	})
 	
