@@ -12,6 +12,15 @@ global $twentyseventeencounter;
 
 ?>
 
+<div class="panel-content">
+	<div class="wrap">
+		
+		<!-- TODO:  THIS IS EACH PANEL HEADER -->
+		<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+		
+	</div><!-- .wrap -->
+</div><!-- .panel-content -->
+
 <?php if ( has_post_thumbnail() ) :
 	$thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'twentyseventeen-featured-image' );
 	
@@ -24,12 +33,3 @@ global $twentyseventeencounter;
 	</div><!-- .panel-image -->
 	
 <?php endif; ?>
-
-<div class="panel-content">
-	<div class="wrap">
-		
-		<!-- TODO:  THIS IS EACH PANEL HEADER -->
-		<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
-		
-	</div><!-- .wrap -->
-</div><!-- .panel-content -->

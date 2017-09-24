@@ -32,4 +32,27 @@ jQuery( document ).ready( function() {
 			jQuery( this ).parent().addClass('current-menu-item');
 		}
 	})
+	
+	// set the default selected menu
+	jQuery('#selected-menu').html('Breakfast');
 })
+
+// Menu changing
+function changeMenu(selectedMenu) {
+		
+	var the_menu = document.getElementById('selected-menu');	
+	for (var i=0; i<food_menus.length; i++) {
+		
+		if ( (food_menus[i][0] === selectedMenu) && (food_menus[i].length > 1) ) {
+			
+			console.log('selected food menu: ', food_menus[i][0]);
+			for ( var j=1; j<food_menus[i].length; j++) {
+			
+				console.log('selected food menu item name: ', food_menus[i][j][0]);
+				console.log('selected food menu item desc: ', food_menus[i][j][1]);
+				console.log('selected food menu item pric: ', food_menus[i][j][2]);
+				// what's listed here is the name of the item, desc, and price
+			}
+		}
+	}
+}
